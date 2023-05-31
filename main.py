@@ -4,9 +4,10 @@ import matplotlib.pyplot as plt
 # constants
 h = 0.01    # mesh width
 k = 0.1     # time step
+a = -100    # lower bound
+b = 100     # upper bound
 
-x = np.arange(-100, 100, h)
-print(x)
+x = np.arange(a, b, h)
 
 
 def u_0(x: np.ndarray):

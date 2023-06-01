@@ -50,6 +50,8 @@ def method_to_name(method: callable) -> str:
 plt.title(f"{method_to_name(difference_method)}")
 plt.xlabel("x")
 plt.ylabel("u")
+plt.xlim([0, 1])
+plt.ylim([-0.5, 1.5])
 plt.plot(x, u[-1], '.')
 plt.plot(x, exact_solution[-1])
 plt.grid(True)
